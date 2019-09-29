@@ -19,12 +19,13 @@ describe "Cartoon Collections" do
     end
   end
 
-  describe "#summon_captain_planet" do
+  describe "summon_captain_planet" do
     it "returns an array with the same number of elements that it was given" do
-      veggies = ["carrot", "cucumber", "pepper"]
-      result = summon_captain_planet(veggies)
+      elements = ["earth", "wind", "fire", "water", "heart"]
+      result = summon_captain_planet(elements)
       expect(result.class).to eq(Array)
       expect(result.length).to eq(3)
+      summon_captain_planet.map
     end
 
     it "capitalizes each element and adds an exclamation mark (test 1)" do
