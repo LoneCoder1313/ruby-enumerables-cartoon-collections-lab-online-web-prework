@@ -6,7 +6,7 @@ describe "Cartoon Collections" do
       dwarves = ["Dopey", "Grumpy", "Bashful"]
 
       output = capture_stdout do
-        roll_call_dwarves(dwarves).map
+        roll_call_dwarves(dwarves).collect 
       end
 
       # This regex allows for arbitrary characters between
@@ -14,7 +14,6 @@ describe "Cartoon Collections" do
       expect(output).to match(/1.*Dopey/)
       expect(output).to match(/2.*Grumpy/)
       expect(output).to match(/3.*Bashful/)
-      roll_call_dwarves.collect 
     end
   end
 
