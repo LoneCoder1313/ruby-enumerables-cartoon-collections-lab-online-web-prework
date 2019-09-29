@@ -29,15 +29,15 @@ describe "Cartoon Collections" do
     end
 
     it "capitalizes each element and adds an exclamation mark (test 1)" do
-      fruits = ["apple", "banana", "orange"]
-      result = summon_captain_planet(fruits)
-      ['Apple!', 'Banana!', 'Orange!'].each { |w| expect(result).to include w }
+      elements = ["earth", "wind", "fire", "water", "heart"]
+      result = summon_captain_planet(elements)
+      ['earth!', 'wind!', 'fire!', 'water!', 'heart!'].each { |w| expect(result).to include w }
     end
 
     it "capitalizes each element and adds an exclamation mark (test 2)" do
-      veggies = ["carrot", "cucumber", "pepper"]
-      result = summon_captain_planet(veggies)
-      ["Carrot!", "Cucumber!", "Pepper!"].each { |w| expect(result).to include w }
+      elements = ["earth", "wind", "fire", "water", "heart"]
+      result = summon_captain_planet(elements)
+      ["Earth!", "Wind!", "Fire!", "Water", "Heart"].each { |w| expect(result).to include w }
     end
   end
 
