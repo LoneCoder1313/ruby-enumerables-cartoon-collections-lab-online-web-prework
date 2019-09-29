@@ -7,6 +7,7 @@ describe "Cartoon Collections" do
 
       output = capture_stdout do
         roll_call_dwarves(dwarves).collect 
+        {"Doc", "Dopey", "Grumpy", "Bashful"}
       end
 
       # This regex allows for arbitrary characters between
