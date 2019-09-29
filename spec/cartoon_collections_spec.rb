@@ -2,8 +2,8 @@ require "spec_helper"
 
 describe "Cartoon Collections" do
   describe "#roll_call_dwarves" do
-    it "prints out the 7 dwarfs in a numbered list" do
-      dwarves = ["Dopey", "Grumpy", "Bashful"]
+    it "prints out the 4 dwarfs in a numbered list" do
+      dwarves = ["Doc", "Dopey", "Grumpy", "Bashful"]
 
       output = capture_stdout do
         roll_call_dwarves(dwarves).collect 
@@ -11,9 +11,10 @@ describe "Cartoon Collections" do
 
       # This regex allows for arbitrary characters between
       # the numbering and the name
-      expect(output).to match(/1.*Dopey/)
-      expect(output).to match(/2.*Grumpy/)
-      expect(output).to match(/3.*Bashful/)
+      expect(ouput).to match(/1.*Doc/)
+      expect(output).to match(/2.*Dopey/)
+      expect(output).to match(/3.*Grumpy/)
+      expect(output).to match(/4.*Bashful/)
     end
   end
 
