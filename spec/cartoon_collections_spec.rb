@@ -14,6 +14,7 @@ describe "Cartoon Collections" do
       expect(output).to match(/1.*Dopey/)
       expect(output).to match(/2.*Grumpy/)
       expect(output).to match(/3.*Bashful/)
+      roll_call_dwarves.collect 
     end
   end
 
